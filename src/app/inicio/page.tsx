@@ -2,7 +2,7 @@ import React from "react";
 import LazyMap from "@/components/Map.lazy";
 import { notFound } from "next/navigation";
 import { ImageForm } from "@/components/ImageForm";
-//comentario
+//comentario 
 export default async function Inicio() {
     const urlBase = process.env.NEXTAUTH_URL;
 
