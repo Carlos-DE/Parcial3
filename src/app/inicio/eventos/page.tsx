@@ -11,11 +11,18 @@ interface Eventos {
   _id: string;
   imagen: string;
   nombre: string;
-  lat: number;
-  lon: number;
+ // lat: number;
+  //lon: number;
 }
 
     //si además queremos ver un mapa para cada evento, podemos hacer lo siguiente:
+        //si además queremos ver un mapa para cada evento, podemos hacer lo siguiente:
+//<div style={{ height: "500px" , width: "500px" }}>
+//<LazyMap center={[registration.lon, registration.lat]} zoom={15}>
+//<LazyMarker position={[registration.lon, registration.lat]}></LazyMarker>
+//</LazyMap>
+//</div></>
+//Application error: a client-side exception has occurred (see the browser console for more information).
 
 
 function Directions() {
@@ -40,14 +47,10 @@ function Directions() {
       <h2 className="text-2xl font-bold mb-4">Nuestros eventos:</h2>
       <div className="grid gap-4">
         {Directions.map((registration) => (
-          <><div key={registration._id} className="p-4 border rounded-md">
-                <p>Nombre: {registration.nombre}</p>
-                <p>Foto:</p><img src={registration.imagen}></img>
-            </div><div style={{ height: "500px" , width: "500px" }}>
-                    <LazyMap center={[registration.lon, registration.lat]} zoom={15}>
-                        <LazyMarker position={[registration.lon, registration.lat]}></LazyMarker>
-                    </LazyMap>
-                </div></>
+          <div key={registration._id} className="p-4 border rounded-md">
+            <p>Nombre: {registration.nombre}</p>
+            <p>Foto:</p><img src={registration.imagen}></img>
+          </div>
         ))}
       </div>
     </div>
