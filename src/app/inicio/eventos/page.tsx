@@ -36,34 +36,26 @@ function Directions() {
     fetchData();
   }, []);
 
-  
-    return (
-      <div className="mx-auto mt-8 max-w-screen-xl px-4">
-        <h2 className="text-2xl font-bold mb-4">Nuestros eventos:</h2>
-        <div className="grid gap-4">
-          {Directions.map((registration) => (
-            <div key={registration._id} className="p-4 border rounded-md">
-              <p>Nombre: {registration.nombre}</p>
-              <p>Foto:</p>
-              <img
-                src={registration.imagen}
-                alt={`Foto de ${registration.nombre}`}
-                onError={(e) => {
-                  e.target.src = "ruta-a-una-imagen-por-defecto.jpg";
-                  // O puedes manejar el error de otra manera, como mostrando un mensaje alternativo.
-                }}
-              />
-              <div style={{ height: "500px" }}>
-                <LazyMap center={[registration.lon, registration.lat]} zoom={15}>
-                  <LazyMarker position={[registration.lon, registration.lat]} />
-                </LazyMap>
-              </div>
-            </div>
-          ))}
-        </div>
+  //<div style={{height: "500px"}}>
+  //              <LazyMap center={[registration.lon, registration.lat]} zoom={15}>
+  //                  <LazyMarker position={[registration.lon, registration.lat]}></LazyMarker>
+  //              </LazyMap>
+  //          </div>
+
+  return (
+    <div className="mx-auto mt-8 max-w-screen-xl px-4">
+      <h2 className="text-2xl font-bold mb-4">Nuestros eventos:</h2>
+      <div className="grid gap-4">
+        {Directions.map((registration) => (
+          <div key={registration._id} className="p-4 border rounded-md">
+            <p>Nombre: {registration.nombre}</p>
+            <p>Foto:</p><img src={registration.imagen}></img>
+            
+          </div>
+        ))}
       </div>
-    );
-  };
-  
-  export default Directions;
-  
+    </div>
+  );
+}
+
+export default Directions;
