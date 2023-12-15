@@ -27,7 +27,7 @@ export default async function Inicio() {
             <a href={`/inicio/crearEvento`}>Crear evento</a>
             <ImageForm></ImageForm>
 
-            <p>Aqui tienes la dirección:</p>
+            <p>Aqui tiene lugar el evento:</p>
 
             <div style={{height: "500px"}}>
                 <LazyMap center={[longitud, latitud]} zoom={15}>

@@ -33,7 +33,7 @@ export default async function Inicio(context: RouteContext<RouteParams>) {
             <h1>InicioPage</h1>
             <ImageForm></ImageForm>
 
-            <p>Aqui tienes la dirección:</p>
+            <p>Aqui tienes el evento:</p>
 
             <div style={{height: "500px"}}>
                 <LazyMap center={[longitud, latitud]} zoom={15}>
