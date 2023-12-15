@@ -37,7 +37,7 @@ function Navbar() {
   return (
     <nav className="bg-gray-500 flex items-center py-3 px-4 justify-between text-white">
       <Link href="/">
-        <h1 className="mr-auto cursor-pointer">appName</h1>
+        <h1 className="mr-auto cursor-pointer">Eventual</h1>
       </Link>
 
       {session?.user ? (

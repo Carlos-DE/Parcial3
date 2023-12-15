@@ -30,7 +30,7 @@ export async function GetDatabase(name = "example") {
 
 export async function GetDirections() {
     const db = await GetDatabase();
-    return db.collection("directions");
+    return db.collection("directions"); //aqui guardamos los eventos
 }
 
 export async function GetRegistrations() {
