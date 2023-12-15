@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 
 interface Eventos {
   _id: string;
-  foto: string;
+  imagen: string;
   nombre: string;
 }
 
@@ -30,8 +30,9 @@ function Directions() {
       <h2 className="text-2xl font-bold mb-4">Nuestros eventos:</h2>
       <div className="grid gap-4">
         {Directions.map((registration) => (
-          <><div key={registration._id} className="p-4 border rounded-md">
-                <p>Foto: <img src />`${registration.foto}`></img></p><p>Nombre: {registration.nombre}</p></>
+          <div key={registration._id} className="p-4 border rounded-md">
+            <p>Foto: {registration.imagen}</p>
+            <p>Nombre: {registration.nombre}</p>
           </div>
         ))}
       </div>
