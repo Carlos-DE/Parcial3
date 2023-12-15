@@ -11,13 +11,16 @@ interface Eventos {
   _id: string;
   imagen: string;
   nombre: string;
-  lat: string;
-  lon: string;
+ // lat: string;
+  //lon: string;
 }
-//no funciona porque el import da error
-//<Figure.Image
-//                    style={{ objectFit: "cover", objectPosition: "center", width: "100%", height: "250px" }}
-//                    src={`${registration.imagen}`} />
+
+    //si además queremos ver un mapa para cada evento, podemos hacer lo siguiente:
+  //<div style={{height: "500px"}}>
+  //              <LazyMap center={[registration.lon, registration.lat]} zoom={15}>
+  //                  <LazyMarker position={[registration.lon, registration.lat]}></LazyMarker>
+  //              </LazyMap>
+  //          </div>
 
 function Directions() {
   const [Directions, setDirections] = useState<Eventos[]>([]);
@@ -35,12 +38,6 @@ function Directions() {
 
     fetchData();
   }, []);
-
-  //<div style={{height: "500px"}}>
-  //              <LazyMap center={[registration.lon, registration.lat]} zoom={15}>
-  //                  <LazyMarker position={[registration.lon, registration.lat]}></LazyMarker>
-  //              </LazyMap>
-  //          </div>
 
   return (
     <div className="mx-auto mt-8 max-w-screen-xl px-4">

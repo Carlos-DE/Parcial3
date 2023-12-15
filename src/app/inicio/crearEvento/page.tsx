@@ -27,10 +27,8 @@ export default async function Inicio() {
             <form>
                 Nombre:
             <input type="text" id="nombre" name="nombre" required></input> <br></br>
-            Altitud:
-            <input type="text" id="altitud" name="altitud" required></input><br></br>
-            Latitud:
-            <input type="text" id="latitud" name="latitud" required></input><br></br>
+            Codigo Postal:
+            <input type="text" id="lugar" name="lugar" required></input><br></br>
             Imagen del evento:<ImageForm></ImageForm>
             <input type="submit" value="Submit"></input>
             </form>
