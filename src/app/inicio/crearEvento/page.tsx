@@ -18,9 +18,6 @@ export default async function Inicio() {
     // }
     // const map = await mapResponse.json();
 
-    const longitud = Number(36.72);
-    const latitud = Number(-4.42);
-
     return (
         <div>
             <h1>Eventos</h1>
