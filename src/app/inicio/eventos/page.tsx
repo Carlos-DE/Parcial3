@@ -1,5 +1,5 @@
 "use client";
-
+import Figure from "react-bootstrap/Figure";
 import { useEffect, useState } from 'react';
 
 interface Eventos {
@@ -31,8 +31,10 @@ function Directions() {
       <div className="grid gap-4">
         {Directions.map((registration) => (
           <div key={registration._id} className="p-4 border rounded-md">
-            <p>Foto: <img src={`${registration.foto}`} /></img>{registration.foto}</p>
             <p>Nombre: {registration.nombre}</p>
+            <Figure.Image
+                    style={{ objectFit: "cover", objectPosition: "center", width: "100%", height: "250px" }}
+                    src={`${registration.foto}`} />
           </div>
         ))}
       </div>
