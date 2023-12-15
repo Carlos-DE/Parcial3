@@ -24,12 +24,29 @@ export default async function Inicio() {
     return (
         <div>
             <h1>Eventos</h1>
-            Nombre:
-            Codigo Postal:
-            Altitud:
-            Latitud:
-            Imagen del evento:<ImageForm></ImageForm>
-            <p>Guardar evento</p>
+            <form action="#" method="post">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
+    <br>
+
+    <label for="codigoPostal">Codigo Postal:</label>
+    <input type="text" id="codigoPostal" name="codigoPostal" required>
+    <br>
+
+    <label for="altitud">Altitud:</label>
+    <input type="text" id="altitud" name="altitud" required>
+    <br>
+
+    <label for="latitud">Latitud:</label>
+    <input type="text" id="latitud" name="latitud" required>
+    <br>
+
+    <label for="imagenEvento">Imagen del evento:</label>
+    <ImageForm></ImageForm>
+    <br>
+
+    <input type="submit" value="Guardar evento">
+  </form>
         </div>
     );
 }
