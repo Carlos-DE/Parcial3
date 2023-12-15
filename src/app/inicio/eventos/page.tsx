@@ -11,8 +11,8 @@ interface Eventos {
   _id: string;
   imagen: string;
   nombre: string;
- // lat: string;
-  //lon: string;
+ // lat: number;
+  //lon: number;
 }
 
     //si además queremos ver un mapa para cada evento, podemos hacer lo siguiente:

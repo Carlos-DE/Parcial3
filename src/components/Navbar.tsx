@@ -43,6 +43,7 @@ function Navbar() {
       {session?.user ? (
         <div className="flex gap-x-2 items-center">
           <Link href="/inicio">Inicio</Link>
+          <Link href="/inicio/eventos">Eventos</Link>
           <Link href="/logRegistrations">Registrations</Link>
           <p className="mr-2">
             {session.user.name} {session.user.email}
