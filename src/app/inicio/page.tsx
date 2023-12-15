@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { ImageForm } from "@/components/ImageForm";
 
 export default async function Inicio() {
-    // const urlBase = process.env.NEXTAUTH_URL;
+    const urlBase = process.env.NEXTAUTH_URL;
 
     // const directionResponse = await fetch(`${urlBase}api/directions/65787cd49324c963057952d2`);
     // if (directionResponse.status !== 200) {
