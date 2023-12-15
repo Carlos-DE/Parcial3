@@ -24,7 +24,7 @@ export default async function Inicio() {
     return (
         <div>
             <h1>Eventos</h1>
-            <Button href={`/crearEvento`}>Crear evento</Button>
+            <a href={`/inicio/crearEvento`}>Crear evento</a>
             <ImageForm></ImageForm>
 
             <p>Aqui tienes la dirección:</p>
