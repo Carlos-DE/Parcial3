@@ -11,8 +11,9 @@ interface RouteParams {
 
 export default async function Inicio(context: RouteContext<RouteParams>) {
     const urlBase = process.env.NEXTAUTH_URL;
+    const dir = context.params.id;
 
-     const directionResponse = await fetch(`${urlBase}api/directions/{context.params.id}}`);
+     const directionResponse = await fetch(`${urlBase}api/directions/${dir}}`);
      if (directionResponse.status !== 200) {
          return <h1>Direction not found</h1>;
      }

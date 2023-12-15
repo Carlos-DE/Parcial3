@@ -29,7 +29,7 @@ export default async function Inicio() {
             Altitud:
             Latitud:
             Imagen del evento:<ImageForm></ImageForm>
-            <Button>Guardar evento</Button>
+            <p>Guardar evento</p>
         </div>
     );
 }
