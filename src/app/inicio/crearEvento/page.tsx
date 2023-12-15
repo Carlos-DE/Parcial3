@@ -24,17 +24,12 @@ export default async function Inicio() {
     return (
         <div>
             <h1>Eventos</h1>
-            <Button href={`/crearEvento`}>Crear evento</Button>
-            <ImageForm></ImageForm>
-
-            <p>Aqui tienes la dirección:</p>
-
-            <div style={{height: "500px"}}>
-                <LazyMap center={[longitud, latitud]} zoom={15}>
-                    <LazyMarker position={[longitud, latitud]}></LazyMarker>
-                    <LazyMarker position={[longitud + 0.005, latitud]}></LazyMarker>
-                </LazyMap>
-            </div>
+            Nombre:
+            Codigo Postal:
+            Altitud:
+            Latitud:
+            Imagen del evento:<ImageForm></ImageForm>
+            <Button>Guardar evento</Button>
         </div>
     );
 }
