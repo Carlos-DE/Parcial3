@@ -19,7 +19,6 @@ export default async function Inicio() {
     // const map = await mapResponse.json();
 
     return (
-        <div>
             <h1>Eventos</h1>
             <form action="#" method="post">
     <label for="nombre">Nombre:</label>
@@ -44,6 +43,5 @@ export default async function Inicio() {
 
     <input type="submit" value="Guardar evento">
   </form>
-        </div>
     );
 }
