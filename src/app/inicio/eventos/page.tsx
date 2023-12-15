@@ -31,8 +31,8 @@ function Directions() {
       <div className="grid gap-4">
         {Directions.map((registration) => (
           <div key={registration._id} className="p-4 border rounded-md">
-            <p>Foto: {registration.imagen}</p>
             <p>Nombre: {registration.nombre}</p>
+            <p>Foto:</p><img src={registration.imagen}></img>
           </div>
         ))}
       </div>
