@@ -11,8 +11,8 @@ interface Eventos {
   _id: string;
   imagen: string;
   nombre: string;
-  lat: number;
-  lon: number;
+  lat: string;
+  lon: string;
 }
 //no funciona porque el import da error
 //<Figure.Image
@@ -50,7 +50,6 @@ function Directions() {
           <div key={registration._id} className="p-4 border rounded-md">
             <p>Nombre: {registration.nombre}</p>
             <p>Foto:</p><img src={registration.imagen}></img>
-            
           </div>
         ))}
       </div>
