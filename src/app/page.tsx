@@ -1,7 +1,6 @@
-import { GetDirections } from '@/lib/database';
 import React from 'react';
 
-export function HomePage() {
+function HomePage() {
   const styles = {
     homePage: {
       maxWidth: '800px',
@@ -26,20 +25,12 @@ export function HomePage() {
     },
   };
 
- // const eventos = await GetDirections();
-//
- // if(!eventos) {
- //   return <h1>No existe ningún evento</h1>;
- // }
-
- // const parsedAuctions = eventos.map(evento => evento.ToJSON());
-
   return (
     <div style={styles.homePage}>
       <section style={styles.welcomeSection}>
         <h1 style={styles.title}>Bienvenidos a Eventual</h1>
         <p>
-          ¡¡Explora nuestro sitio para descubrir los eventos más interesantes!!
+          Explora nuestro sitio para descubrir contenido emocionante y útil.
         </p>
       </section>
 
