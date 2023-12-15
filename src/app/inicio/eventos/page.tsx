@@ -2,11 +2,17 @@
 
 import { useEffect, useState } from 'react';
 //import Figure from "react-bootstrap/Figure";
+import React from "react";
+import LazyMap, {LazyMarker} from "@/components/Map.lazy";
+import { notFound } from "next/navigation";
+import { ImageForm } from "@/components/ImageForm";
 
 interface Eventos {
   _id: string;
   imagen: string;
   nombre: string;
+  lat: number;
+  lon: number;
 }
 //no funciona porque el import da error
 //<Figure.Image
@@ -38,7 +44,11 @@ function Directions() {
           <div key={registration._id} className="p-4 border rounded-md">
             <p>Nombre: {registration.nombre}</p>
             <p>Foto:</p><img src={registration.imagen}></img>
-            
+            <div style={{height: "500px"}}>
+                <LazyMap center={[registration.lon, registration.lat]} zoom={15}>
+                    <LazyMarker position={[registration.lon, registration.lat]}></LazyMarker>
+                </LazyMap>
+            </div>
           </div>
         ))}
       </div>
