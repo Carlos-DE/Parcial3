@@ -24,7 +24,7 @@ interface Eventos {
 //</div></> 
 //No lo he puesto porque sale este error que sincermanete nunca había visto:
 //Application error: a client-side exception has occurred (see the browser console for more information).
-//he dejado por ello un ejemplo de un mapa en la página de inicio, que sí funciona.
+//he dejado por ello un ejemplo de un mapa en la página de inicio, que sí funciona. 
 
 
 function Directions() {
