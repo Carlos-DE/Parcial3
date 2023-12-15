@@ -27,11 +27,11 @@ function Directions() {
 
   return (
     <div className="mx-auto mt-8 max-w-screen-xl px-4">
-      <h2 className="text-2xl font-bold mb-4">Directions</h2>
+      <h2 className="text-2xl font-bold mb-4">Nuestros eventos:</h2>
       <div className="grid gap-4">
         {Directions.map((registration) => (
           <div key={registration._id} className="p-4 border rounded-md">
-            <p>Foto: {registration.foto}</p>
+            <p>Foto: <img src={`${registration.foto}`} /></img>{registration.foto}</p>
             <p>Nombre: {registration.nombre}</p>
           </div>
         ))}
